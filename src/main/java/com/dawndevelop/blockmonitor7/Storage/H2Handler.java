@@ -27,7 +27,7 @@ public class H2Handler implements IStorageHandler {
                             "`locationZ` INT," +
                             "`worldName` VARCHAR(500)," +
                             "`eventtype` VARCHAR(255)," +
-                            "`datacontainer` VARCHAR(10000)," +
+                            "`datacontainer` LONGTEXT," +
                             "`timestamp` TIMESTAMP" +
                             ");")
             );

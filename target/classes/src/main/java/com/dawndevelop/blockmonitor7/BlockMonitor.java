@@ -25,9 +25,9 @@ import java.util.concurrent.Executors;
 import java.util.logging.Logger;
 
 @Plugin(
-        id = "blockmonitor",
+        id = "blockmonitor7",
         name = "Block Monitor",
-        version = "1.0.1",
+        version = "7.0.0.1",
         description = "A plugin that monitors what players do ingame and logs it!"
 )
 public class BlockMonitor {

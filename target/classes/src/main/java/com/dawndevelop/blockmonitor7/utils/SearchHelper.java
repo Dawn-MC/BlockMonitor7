@@ -39,7 +39,7 @@ import static org.spongepowered.api.text.TextTemplate.of;
 public class SearchHelper {
     public static List<Text> searchArea(Location<World> worldLocation, int searchDiameter, Locale locale) throws SQLException {
 
-        String sql = "SELECT * FROM `blockmonitor` WHERE (`worldName` = ?) AND (`locationX` <= ?) AND (`locationX` >= ?) AND (`locationZ` <= ?) AND (`locationZ` >= ?);";
+        String sql = "SELECT * FROM `blockmonitor` WHERE (`worldName` = ?) AND (`locationX` <= ?) AND (`locationX` >= ?) AND (`locationZ` <= ?) AND (`locationZ` >= ?) ORDER BY `id` DESC;";
         Connection connection = storageHandler.dataSource.getConnection();
         PreparedStatement preparedStatement = connection.prepareStatement(sql);
         preparedStatement.setString(1, worldLocation.getExtent().getName());

@@ -1,0 +1,14 @@
+[
+    {
+        "modid": "blockmonitor7",
+        "name": "Block Monitor",
+        "version": "7.0.0.2",
+        "description": "A plugin that monitors what players do ingame and logs it!",
+        "dependencies": [
+            "spongeapi@7.1.0"
+        ],
+        "requiredMods": [
+            "spongeapi@7.1.0"
+        ]
+    }
+]
